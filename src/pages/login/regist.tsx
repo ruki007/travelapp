@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebase';
 import './regist.css';
@@ -8,6 +8,7 @@ const Regist: React.FC = () => {
     const [email, setEmail] = useState(''); 
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
+    const navigate = useNavigate(); // React Routerのフックを使用して画面遷移を行う
 
     const handleRegist = (e: React.FormEvent) => {
         e.preventDefault();
@@ -24,6 +25,9 @@ const Regist: React.FC = () => {
                 const user = userCredential.user;
                 console.log('新規登録成功:', user);
                 alert('新規登録が完了しました！');
+
+                // 新規登録後の処理 (例: ホーム画面へ遷移)
+                navigate('/dashboard'); // React Routerを使った画面遷移の例
             })
             .catch((error) => {
                 // エラー処理
