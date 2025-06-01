@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 
 export const useFetch = (url: string) => {
-    const [data, setData] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [data, setData] = useState<any>(null);
+    const [loading, setLoading] = useState<boolean>(true);
+    const [error, setError] = useState<Error | null>(null);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -15,7 +15,8 @@ export const useFetch = (url: string) => {
                 const result = await response.json();
                 setData(result);
             } catch (error) {
-                setError(error);
+                // エラーを適切に処理
+                setError(error instanceof Error ? error : new Error('不明なエラーが発生しました'));
             } finally {
                 setLoading(false);
             }

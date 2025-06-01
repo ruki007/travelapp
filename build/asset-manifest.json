@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ruki007/travelapp.git/static/css/main.b1907133.chunk.css",
+    "main.js": "/ruki007/travelapp.git/static/js/main.c2a3e3ba.chunk.js",
+    "main.js.map": "/ruki007/travelapp.git/static/js/main.c2a3e3ba.chunk.js.map",
+    "runtime-main.js": "/ruki007/travelapp.git/static/js/runtime-main.de785228.js",
+    "runtime-main.js.map": "/ruki007/travelapp.git/static/js/runtime-main.de785228.js.map",
+    "static/js/2.b130d2f6.chunk.js": "/ruki007/travelapp.git/static/js/2.b130d2f6.chunk.js",
+    "static/js/2.b130d2f6.chunk.js.map": "/ruki007/travelapp.git/static/js/2.b130d2f6.chunk.js.map",
+    "index.html": "/ruki007/travelapp.git/index.html",
+    "static/css/main.b1907133.chunk.css.map": "/ruki007/travelapp.git/static/css/main.b1907133.chunk.css.map",
+    "static/js/2.b130d2f6.chunk.js.LICENSE.txt": "/ruki007/travelapp.git/static/js/2.b130d2f6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de785228.js",
+    "static/js/2.b130d2f6.chunk.js",
+    "static/css/main.b1907133.chunk.css",
+    "static/js/main.c2a3e3ba.chunk.js"
+  ]
+}
